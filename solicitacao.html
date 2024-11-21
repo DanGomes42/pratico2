@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastro de Solicitações</title>
+</head>
+<body>
+    <h1>Cadastro de Solicitações</h1>
+    <form id="formCadastroChamado">
+        <label for="descricao">Descrição do Problema:</label>
+        <textarea id="descricao" name="descricao" required></textarea>
+
+        <label for="criticidade">Urgência:</label>
+        <select id="criticidade" name="criticidade" required>
+            <option value="baixa">Baixa</option>
+            <option value="media">Média</option>
+            <option value="alta">Alta</option>
+        </select>
+
+        <label for="status">Status:</label>
+        <select id="status" name="status" required>
+            <option value="pendente">Pendente</option>
+            <option value="em_andamento">Em Andamento</option>
+            <option value="finalizada">Finalizada</option>
+        </select>
+
+        <label for="data_abertura">Data de Abertura:</label>
+        <input type="date" id="data_abertura" name="data_abertura">
+
+        <label for="funcionário">Funcionário Responsável:</label>
+        <input type="text" id="funcionário" name="funcionário">
+
+        <button type="submit">Cadastrar Solicitação</button>
+    </form>
+    <div id="mensagem"></div>
+
+    <script src="script_solicitacao.js"></script>
+</body>
+</html>
